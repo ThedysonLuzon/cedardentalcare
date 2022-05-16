@@ -1,0 +1,24 @@
+/* app.css Thedyson Eduard Luzon - Cedar Dental Care */
+#allPage {
+	width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 75px;
+	padding-bottom: 75px;
+}
+
+#copyright {
+	
+	font-size: x-small;}
+
+
+#customlogo {
+	float: right;
+	height: 50px;
+	background-color: black;
+}
+
+#selfportrait {
+    float: left;
+}
+
