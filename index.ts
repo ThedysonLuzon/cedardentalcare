@@ -5,7 +5,6 @@ import createError from 'http-errors';
 
 import app from './server/config/app';
 
-
 /**
  * Get port from environment and store in Express.
  */
