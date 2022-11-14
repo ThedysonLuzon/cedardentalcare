@@ -19,6 +19,7 @@ router.get('/oralsurgery', controllers_1.DisplayOralSurgeryPage);
 router.get('/cosmeticdentistry', controllers_1.DisplayCosmeticDentistryPage);
 router.get('/teethwhitening', controllers_1.DisplayTeethWhiteningPage);
 router.get('/denturerepair', controllers_1.DisplayDentureRepairPage);
+router.get('/endodontics', controllers_1.DisplayEndodonticsPage);
 router.get('/contact', controllers_1.DisplayContactPage);
 exports.default = router;
 //# sourceMappingURL=index.js.map

@@ -52,6 +52,9 @@ export function DisplayDentureRepairPage(req: express.Request, res: express.Resp
     res.render('index', { title: 'Denture Repair', page: 'denturerepair', displayName: UserDisplayName(req) });
 }
 
+export function DisplayEndodonticsPage(req: express.Request, res: express.Response, next: express.NextFunction) {
+    res.render('index', { title: 'Endodontics', page: 'endodontics', displayName: UserDisplayName(req) });
+}
 export function DisplayContactPage(req: express.Request, res: express.Response, next: express.NextFunction) {
     res.render('index', { title: 'Contact', page: 'contact', displayName: UserDisplayName(req) });
 }

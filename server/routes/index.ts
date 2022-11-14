@@ -1,5 +1,5 @@
 import express from 'express';
-import { DisplayAboutPage, DisplayContactPage, DisplayCosmeticDentistryPage, DisplayDentalImplantsPage, DisplayDentureRepairPage, DisplayDigitalXRaysPage, DisplayGeneralDentistryPage, DisplayHomePage, DisplayOralSurgeryPage, DisplayOrthodonticsPage, DisplayPediatricDentistryPage, DisplayServicesPage, DisplayTeamPage, DisplayTeethWhiteningPage } from '../controllers';
+import { DisplayAboutPage, DisplayContactPage, DisplayCosmeticDentistryPage, DisplayDentalImplantsPage, DisplayDentureRepairPage, DisplayDigitalXRaysPage, DisplayEndodonticsPage, DisplayGeneralDentistryPage, DisplayHomePage, DisplayOralSurgeryPage, DisplayOrthodonticsPage, DisplayPediatricDentistryPage, DisplayServicesPage, DisplayTeamPage, DisplayTeethWhiteningPage } from '../controllers';
 const router = express.Router();
 
 /* GET home page. */
@@ -28,6 +28,8 @@ router.get('/cosmeticdentistry', DisplayCosmeticDentistryPage);
 router.get('/teethwhitening', DisplayTeethWhiteningPage);
 
 router.get('/denturerepair', DisplayDentureRepairPage);
+
+router.get('/endodontics', DisplayEndodonticsPage);
 
 router.get('/contact', DisplayContactPage);
 

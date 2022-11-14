@@ -4,14 +4,248 @@
   <h1>
     <%= title %>
   </h1>
-  <h3 class="text-center">Patient Form
-  </h3>
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-4">
+        <img id="customlogo" src="\assets\images\cedardentalcarelogo.png" class="img-thumbnail rounded float-start" alt="Cedar Dental Care logo"> </a>
+      </div>
+      <div class="col-8">
+        <h3 class="text-end text-uppercase">Medical Alert</h3>
+        <h4 class="text-end text-uppercase">Welcome to our Dental Office </h4>
+        <p class="text-end">The personal information provided below will be protected and kept private by our office. All information will be used and disclosed responsibly according to the Privacy Act standards set up and monitored by our office.</p>
+      </div>
+    </div>
+  </div>
 
-  <h4 class="text-start">About You: </h4>
+  <form class="row g-3 border">
 
-  <form class="row g-3">
+    <!-- Checks -->
+    <div class="form-floating col-5">
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="optionMr">
+      <label class="form-check-label" for="inlineCheckbox1">Mr.</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="optionMrs">
+      <label class="form-check-label" for="inlineCheckbox2">Mrs.</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="optionMiss">
+      <label class="form-check-label" for="inlineCheckbox3">Miss</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="optionMs">
+      <label class="form-check-label" for="inlineCheckbox4">Ms.</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="optionDr">
+      <label class="form-check-label" for="inlineCheckbox5">Dr.</label>
+    </div>
+  </div>
+
+  <!-- Given Name -->
+  <div class="form-floating col-4">
+    <input type="text" class="form-control" id="floatingGivenName" placeholder="John Doe">
+    <label for="floatingInput">Given Name: </label>
+  </div>
+
+  <!-- Marital Status -->
+  <div class="form-floating col-3">
+    <input type="text" class="form-control" id="floatingMaritalStatus" placeholder="Marital Status">
+    <label for="floatingInput">Marital Status: </label>
+  </div>
+
+  <!-- Surname -->
+  <div class="form-floating col-4">
+    <input type="text" class="form-control" id="floatingSurname" placeholder="Surname">
+    <label for="floatingSurname">Surname: </label>
+  </div>
+
+  <!-- Pronunciation -->
+  <div class="form-floating col-4">
+    <input type="text" class="form-control" id="floatingPronunciation" placeholder="Pronunciation">
+    <label for="floatingPronunciation">Pronunciation: </label>
+  </div>
+
+  <!-- Prefer to be called -->
+  <div class="form-floating col-4">
+    <input type="text" class="form-control" id="floatingPreferToBeCalled" placeholder="Prefer to be called">
+    <label for="floatingPreferToBeCalled">Prefer to be called: </label>
+  </div>
+
+  <!-- Address -->
+  <div class="form-floating col-12">
+    <div class="input-group">
+      <span class="input-group-text">Address</span>
+
+      <input type="text" class="form-control" id="floatingStreet" placeholder="Street">
+
+      <input type="text" aria-label="AptNum" class="form-control" id="floatingAptNum" placeholder="AptNum">
+
+      <input type="text" aria-label="City" class="form-control" id="floatingCity" placeholder="City">
+
+      <input type="text" aria-label="Postal Code" class="form-control" id="floatingPostalCode" placeholder="Postal Code">
+
+    </div>
+  </div>
+
+  <!-- Home phone -->
+  <div class="form-floating col-4">
+    <input type="text" class="form-control" id="floatingHomePhone" placeholder="HomePhone">
+    <label for="floatingHomePhone">Home Phone: </label>
+  </div>
+  <!-- Work phone -->
+  <div class="form-floating col-4">
+    <input type="text" class="form-control" id="floatingWorkPhone" placeholder="WorkPhone">
+    <label for="floatingWorkPhone">Work Phone: </label>
+  </div>  
+  <!-- Date of Birth -->
+  <div class="form-floating col-4">
+    <input type="date" class="form-control" id="floatingBirthDate" placeholder="Birth Date">
+    <label for="floatingBirthDate">Birth Date: </label>
+  </div>
+
+  <!-- Fax -->
+  <div class="form-floating col-4">
+    <input type="text" class="form-control" id="floatingFax" placeholder="Fax">
+    <label for="floatingFax">Fax: </label>
+  </div>  
+  <!-- Other -->
+  <div class="form-floating col-4">
+    <input type="text" class="form-control" id="floatingOther" placeholder="Other">
+    <label for="floatingOther">Other: </label>
+  </div>  
+  <!-- MFAC -->
+  <div class="form-floating col-3">
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="optionMale">
+      <label class="form-check-label" for="inlineCheckbox1">Male</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="optionFemale">
+      <label class="form-check-label" for="inlineCheckbox2">Female</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="optionAdult">
+      <label class="form-check-label" for="inlineCheckbox3">Adult</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="optionChild">
+      <label class="form-check-label" for="inlineCheckbox4">Child</label>
+    </div>
+  </div>
+
+  <!-- Employer -->
+  <div class="form-floating col-6">
+    <input type="text" class="form-control" id="floatingEmployer" placeholder="Employer">
+    <label for="floatingEmployer">Employer: </label>
+  </div> 
+
+  <!--Occupation-->
+  <div class="form-floating col-6">
+    <input type="text" class="form-control" id="floatingOccupation" placeholder="Occupation">      
+    <label for="floatingOccupation">Occupation: </label>
+  </div> 
+  
+  <!--Email Address-->
+  <div class="form-floating col-6">
+    <input type="text" class="form-control" id="floatingEmailAddress" placeholder="Email Address">
+    <label for="floatingEmailAddress">Email Address: </label>
+  </div> 
+
+  <!-- Contact Method -->
+  <div class="form-floating col-6">
+    <input type="text" class="form-control" id="floatingContactMethod" placeholder="Contact Method">
+    <label for="floatingContactMethod">Contact Method: </label>
+  </div> 
+
+  <hr style="height: 5px; background-color: maroon;">
+
+  <!-- Referred By -->
+  <div class="form-floating col-12">
+    <input type="text" class="form-control" id="floatingReferredBy" placeholder="Referred By">      
+    <label for="floatingReferredBy">Who may we thank for referring you to this office? </label>
+  </div> 
+
+  <!-- Available on short notice for future appointments -->
+  <div class="input-group mb-3">
+    <label class="input-group-text" for="inputGroupShortNotice">Are you likely to be available on short notice for future appointments? </label>
+    <select class="form-select" id="inputGroupShortNotice">
+      <option selected>Please select... </option>
+      <option value="1">Yes</option>
+      <option value="2">No</option>
+    </select>
+  </div>
+
+  <!-- Family Physician -->
+  <div class="form-floating col-8">
+    <input type="text" class="form-control" id="floatingFamilyPhysician" placeholder="Family Physician">
+    <label for="floatingFamilyPhysician">Family Physician: </label>
+  </div> 
+
+  <div class="form-floating col-4">
+    <input type="text" class="form-control" id="floatingFamilyPhysicianPhoneNum" placeholder="(123) 456-7890">
+    <label for="floatingFamilyPhysicianPhoneNum">Phone: </label>
+  </div> 
+
+  <!-- Emergency Contact -->
+  <div class="form-floating col-6">
+    <input type="text" class="form-control" id="floatingEmergencyContact" placeholder="Emergency Contact">
+    <label for="floatingEmergencyContact">In case of Emergency Notify: </label>
+  </div>
+  
+  <div class="form-floating col-2">
+    <input type="text" class="form-control" id="floatingEmergencyRelation" placeholder="Relation">
+    <label for="floatingEmergencyRelation">Relation: </label>
+  </div> 
+
+  <div class="form-floating col-4">
+    <input type="text" class="form-control" id="floatingEmergencyPhoneNum" placeholder="(123) 456-7890">
+    <label for="floatingEmergencyPhoneNum">Phone: </label>
+  </div> 
+
+  <hr style="height: 5px; background-color: maroon;">
+
+
+  <!-- Primary Insurance -->
+
+
+  <!-- Secondary Insurance -->
+
+
+
+    <div class="col-sm-6 border border-dark">
+
+      <div class="form-floating border border-end-0 border-start-0 border-dark">
+        <h5>Primary Insurance</h5>
+      </div>
+      <div class="row">
+      
+        <div class="form-floating col-6 col-sm-6">
+          <input type="text" class="form-control" id="floatingEmergencyPhoneNum" placeholder="(123) 456-7890">
+          <label for="floatingEmergencyPhoneNum">Phone: </label>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="col-sm-6 border border-dark">
+
+      <div class="form-floating border border-end-0 border-start-0 border-dark">
+        <h5>Secondary Insurance</h5>
+      </div>
     
-    <div class="form-floating">
+      <div class="row">
+        <div class="col-6 col-sm-6">Secondary</div>
+
+      </div>
+    </div>
+  <!---->
+  <!---->
+  <!---->
+
+    <div class="form-floating col-6">
       <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
       <label for="floatingInput">Email address</label>
     </div>

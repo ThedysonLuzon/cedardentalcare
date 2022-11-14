@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.DisplayContactPage = exports.DisplayDentureRepairPage = exports.DisplayTeethWhiteningPage = exports.DisplayCosmeticDentistryPage = exports.DisplayOralSurgeryPage = exports.DisplayDigitalXRaysPage = exports.DisplayPediatricDentistryPage = exports.DisplayGeneralDentistryPage = exports.DisplayDentalImplantsPage = exports.DisplayOrthodonticsPage = exports.DisplayServicesPage = exports.DisplayTeamPage = exports.DisplayAboutPage = exports.DisplayHomePage = void 0;
+exports.DisplayContactPage = exports.DisplayEndodonticsPage = exports.DisplayDentureRepairPage = exports.DisplayTeethWhiteningPage = exports.DisplayCosmeticDentistryPage = exports.DisplayOralSurgeryPage = exports.DisplayDigitalXRaysPage = exports.DisplayPediatricDentistryPage = exports.DisplayGeneralDentistryPage = exports.DisplayDentalImplantsPage = exports.DisplayOrthodonticsPage = exports.DisplayServicesPage = exports.DisplayTeamPage = exports.DisplayAboutPage = exports.DisplayHomePage = void 0;
 const utils_1 = require("../views/utils");
 function DisplayHomePage(req, res, next) {
     res.render('index', { title: 'Home', page: 'home', displayName: (0, utils_1.UserDisplayName)(req) });
@@ -54,6 +54,10 @@ function DisplayDentureRepairPage(req, res, next) {
     res.render('index', { title: 'Denture Repair', page: 'denturerepair', displayName: (0, utils_1.UserDisplayName)(req) });
 }
 exports.DisplayDentureRepairPage = DisplayDentureRepairPage;
+function DisplayEndodonticsPage(req, res, next) {
+    res.render('index', { title: 'Endodontics', page: 'endodontics', displayName: (0, utils_1.UserDisplayName)(req) });
+}
+exports.DisplayEndodonticsPage = DisplayEndodonticsPage;
 function DisplayContactPage(req, res, next) {
     res.render('index', { title: 'Contact', page: 'contact', displayName: (0, utils_1.UserDisplayName)(req) });
 }

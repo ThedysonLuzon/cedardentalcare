@@ -1,24 +1,56 @@
 /* app.css Thedyson Eduard Luzon - Cedar Dental Care */
+
 #allPage {
-	width: 980px;
+	width: auto;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 75px;
 	padding-bottom: 75px;
 }
 
-#copyright {
-	
-	font-size: x-small;}
+/* Footer */
+#main-footer {
+	padding-bottom: 25px;
+}
 
+/* Copyright */
+#copyright {	
+	font-size: x-small;
+}
 
+/* Cedar dental care logo */
 #customlogo {
 	float: right;
 	height: 50px;
 	background-color: black;
 }
 
-#selfportrait {
-    float: left;
+/* Header image background */
+#imgBackground {
+	width: 100%; 
+	height: 500px; 
+	position: relative; 
+	text-align: center; 
+	color:white;
+}
+
+/* Header text on img */
+#pgTitle {
+    position: absolute; 
+	top: 50%; 
+	left: 50%; 
+	transform: translate(-50%, -50%); 
+	color:white; 
+	text-shadow: 2px 2px 5px red;
+}
+
+/* Footer link */
+#footerPhone {
+	text-decoration: none;
+} 
+
+/* General Link remove underline */
+.a {
+	text-decoration: none;
 }
 
