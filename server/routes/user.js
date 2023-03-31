@@ -13,4 +13,3 @@ router.get('/register', user_1.DisplayRegisterPage);
 router.post('/register', user_1.ProcessRegisterPage);
 router.get('/logout', user_1.ProcessLogout);
 exports.default = router;
-//# sourceMappingURL=user.js.map

@@ -6,6 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const controllers_1 = require("../controllers");
 const router = express_1.default.Router();
+/* GET home page. */
 router.get('/', controllers_1.DisplayHomePage);
 router.get('/about', controllers_1.DisplayAboutPage);
 router.get('/team', controllers_1.DisplayTeamPage);
@@ -22,4 +23,3 @@ router.get('/denturerepair', controllers_1.DisplayDentureRepairPage);
 router.get('/endodontics', controllers_1.DisplayEndodonticsPage);
 router.get('/contact', controllers_1.DisplayContactPage);
 exports.default = router;
-//# sourceMappingURL=index.js.map

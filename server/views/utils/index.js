@@ -8,4 +8,3 @@ function UserDisplayName(req) {
     }
 }
 exports.UserDisplayName = UserDisplayName;
-//# sourceMappingURL=index.js.map

@@ -62,4 +62,3 @@ function DisplayContactPage(req, res, next) {
     res.render('index', { title: 'Contact', page: 'contact', displayName: (0, utils_1.UserDisplayName)(req) });
 }
 exports.DisplayContactPage = DisplayContactPage;
-//# sourceMappingURL=index.js.map

@@ -7,22 +7,43 @@ const http_1 = __importDefault(require("http"));
 const debug_1 = __importDefault(require("debug"));
 (0, debug_1.default)('cedar-dental-care:server');
 const app_1 = __importDefault(require("./server/config/app"));
+/**
+ * Get port from environment and store in Express.
+ */
 const port = normalizePort(process.env.PORT || '3000');
 app_1.default.set('port', port);
+/**
+ * Create HTTP server.
+ */
 const server = http_1.default.createServer(app_1.default);
+/**
+ * Listen on provided port, on all network interfaces.
+ */
 server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
+/**
+ * Normalize a port into a number, string, or false.
+ */
+// const/let nameOfMyVariable: Type
+// let variable1:string;
+// const constant1:number;
+// function nameOfMyFunction(): ReturnType {}
 function normalizePort(val) {
     var port = parseInt(val, 10);
     if (isNaN(port)) {
+        // named pipe
         return val;
     }
     if (port >= 0) {
+        // port number
         return port;
     }
     return false;
 }
+/**
+ * Event listener for HTTP server "error" event.
+ */
 function onError(error) {
     if (error.syscall !== 'listen') {
         throw error;
@@ -30,6 +51,7 @@ function onError(error) {
     var bind = typeof port === 'string'
         ? 'Pipe ' + port
         : 'Port ' + port;
+    // handle specific listen errors with friendly messages
     switch (error.code) {
         case 'EACCES':
             console.error(bind + ' requires elevated privileges');
@@ -43,6 +65,9 @@ function onError(error) {
             throw error;
     }
 }
+/**
+ * Event listener for HTTP server "listening" event.
+ */
 function onListening() {
     var addr = server.address();
     var bind = typeof addr === 'string'
@@ -50,4 +75,3 @@ function onListening() {
         : 'port ' + addr.port;
     (0, debug_1.default)('Listening on ' + bind);
 }
-//# sourceMappingURL=index.js.map

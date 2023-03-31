@@ -35,6 +35,7 @@ const loginFunction = (req, username, password, done) => __awaiter(void 0, void 
 });
 const signupFunction = (req, username, password, done) => __awaiter(void 0, void 0, void 0, function* () {
     try {
+        //deconstructing
         const { username, password, email, FirstName, LastName } = req.body;
         console.log(req.body);
         if (!username || !password || !email || !FirstName || !LastName) {
@@ -85,4 +86,3 @@ passport_1.default.deserializeUser((userId, done) => {
     });
 });
 exports.default = passport_1.default;
-//# sourceMappingURL=index.js.map

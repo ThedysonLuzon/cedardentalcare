@@ -56,4 +56,3 @@ function ProcessLogout(req, res) {
     });
 }
 exports.ProcessLogout = ProcessLogout;
-//# sourceMappingURL=user.js.map

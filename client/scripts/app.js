@@ -1,3 +1,4 @@
+//IIFE 
 'use strict';
 (() => {
     function Start() {
@@ -5,4 +6,3 @@
     }
     window.addEventListener('load', Start);
 })();
-//# sourceMappingURL=app.js.map

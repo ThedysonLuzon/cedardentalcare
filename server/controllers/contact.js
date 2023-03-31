@@ -6,16 +6,19 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ProcessDeletePage = exports.ProcessAddPage = exports.ProcessEditPage = exports.DisplayAddPage = exports.DisplayEditPage = exports.DisplayListPage = void 0;
 const contact_1 = __importDefault(require("../models/contact"));
 const utils_1 = require("../views/utils");
+//(R)ead in CRUD
 function DisplayListPage(req, res, next) {
     contact_1.default.find(function (err, contactCollection) {
         if (err) {
             console.error(err);
             res.end(err);
         }
+        // console.log(contactCollection);
         res.render('index', { title: 'Contact list', page: 'contact/contact-list', contact: contactCollection, displayName: (0, utils_1.UserDisplayName)(req) });
     });
 }
 exports.DisplayListPage = DisplayListPage;
+// Display (E)dit page
 function DisplayEditPage(req, res, next) {
     let id = req.params.id;
     contact_1.default.findById(id, {}, {}, (err, contactItemToEdit) => {
@@ -29,10 +32,13 @@ function DisplayEditPage(req, res, next) {
     });
 }
 exports.DisplayEditPage = DisplayEditPage;
+// Display (C)reate page
 function DisplayAddPage(req, res, next) {
+    // show the edit view
     res.render('index', { title: 'Add Contact', page: 'contact/contact-edit', item: '', displayName: (0, utils_1.UserDisplayName)(req) });
 }
 exports.DisplayAddPage = DisplayAddPage;
+// Process (E)dit page
 function ProcessEditPage(req, res, next) {
     let id = req.params.id;
     let updatedItem = new contact_1.default({
@@ -50,6 +56,7 @@ function ProcessEditPage(req, res, next) {
     });
 }
 exports.ProcessEditPage = ProcessEditPage;
+// Process (C)reate page
 function ProcessAddPage(req, res, next) {
     let newItem = new contact_1.default({
         "contactName": req.body.contactName,
@@ -66,6 +73,7 @@ function ProcessAddPage(req, res, next) {
     });
 }
 exports.ProcessAddPage = ProcessAddPage;
+// Process (D)elete page
 function ProcessDeletePage(req, res, next) {
     let id = req.params.id;
     contact_1.default.remove({ _id: id }, (err) => {
@@ -77,4 +85,3 @@ function ProcessDeletePage(req, res, next) {
     });
 }
 exports.ProcessDeletePage = ProcessDeletePage;
-//# sourceMappingURL=contact.js.map

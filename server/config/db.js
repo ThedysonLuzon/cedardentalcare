@@ -5,4 +5,3 @@ exports.LocalURI = "mongodb://localhost:27017/cedardentalcare";
 exports.RemoteURI = "mongodb+srv://thedyson:centennial@cluster0.10i0q.mongodb.net/cedardentalcare?retryWrites=true&w=majority";
 exports.Secret = "NotSoSecret";
 exports.HostName = "localhost";
-//# sourceMappingURL=db.js.map
